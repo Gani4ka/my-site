@@ -6,7 +6,7 @@ export default async function Home() {
     const projects = await getProjects();
 
     return (
-        <main>
+        <>
             <h1 className="text-7xl font-extrabold">
                 Hello I&apos;m
                 <span className="bg-gradient-to-r from-cyan-50 via-cyan-500 to-cyan-900 bg-clip-text text-transparent">
@@ -22,11 +22,10 @@ export default async function Home() {
             <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project) => (
                     <Link
-                        href={`/projects/test-1`}
+                        href={`/projects/${project.slug}`}
                         key={project._id}
                         className="border-2 border-gray-500 p-1 hover:border-cyan-500 transition"
                     >
-                        <p>{'sluug' + project.slug}</p>
                         {project.image && (
                             <>
                                 <Image
@@ -44,6 +43,6 @@ export default async function Home() {
                     </Link>
                 ))}
             </div>
-        </main>
+        </>
     );
 }

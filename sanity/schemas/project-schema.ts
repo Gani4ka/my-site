@@ -35,6 +35,21 @@ const project = {
             type: 'url',
         },
         {
+            name: 'complexity',
+            title: 'Complexity',
+            type: 'number',
+        },
+        {
+            name: 'year',
+            title: 'Year',
+            type: 'number',
+        },
+        {
+            name: 'github',
+            title: 'Github',
+            type: 'url',
+        },
+        {
             name: 'content',
             title: 'Content',
             type: 'array',
