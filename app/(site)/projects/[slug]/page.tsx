@@ -1,7 +1,7 @@
 import { PortableText } from '@portabletext/react';
 import { getProject } from '@site/sanity/utils';
 import Image from 'next/image';
-import { ComplexityRating } from './components/ComplexityRating/ComplexityRating';
+import { ComplexityRating } from '../../components/ComplexityRating/ComplexityRating';
 
 interface ProjectPageProps {
     params: {

@@ -1,4 +1,4 @@
-import classes from './complexityRating.module.css';
+import classes from './ComplexityRating.module.css';
 
 interface ComplexityRatingProps {
     rating: number;
