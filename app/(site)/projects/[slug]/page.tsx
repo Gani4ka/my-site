@@ -1,5 +1,5 @@
 import { PortableText } from '@portabletext/react';
-import { getProject } from '@site/sanity/utils';
+import { getProject } from '@site/sanity/getData';
 import Image from 'next/image';
 import { ComplexityRating } from '../../components/ComplexityRating/ComplexityRating';
 

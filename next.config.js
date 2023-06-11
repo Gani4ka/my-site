@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   experimental: {
     appDir: true,
@@ -11,6 +12,15 @@ const nextConfig = {
         port: '',
       },
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/projects',
+        destination: '/',
+        permanent: true,
+      },
+    ];
   },
 }
 

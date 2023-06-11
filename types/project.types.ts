@@ -11,4 +11,5 @@ export type Project = {
     complexity: number;
     git: string;
     year: number;
+    stack: string[];
 };

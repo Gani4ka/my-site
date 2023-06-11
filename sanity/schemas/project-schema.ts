@@ -50,6 +50,12 @@ const project = {
             type: 'url',
         },
         {
+            name: 'stack',
+            title: 'Stack',
+            type: 'array',
+            of: [{ type: 'string' }],
+        },
+        {
             name: 'content',
             title: 'Content',
             type: 'array',
